@@ -33,27 +33,36 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 /* ===== Waitlist form placeholder handler ===== */
-const form = document.getElementById('waitlist-form');
-if (form) {
+document.querySelectorAll('#waitlist-form').forEach((form) => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const input = form.querySelector('.waitlist-input');
     const email = input.value.trim();
     if (!email) return;
 
-    // Hide the form, show success message
     form.style.display = 'none';
-    let success = document.querySelector('.waitlist-success');
-    if (!success) {
-      success = document.createElement('p');
-      success.className = 'waitlist-success show';
-      success.textContent = "You're on the list. We'll be in touch.";
-      form.parentNode.insertBefore(success, form.nextSibling);
-    } else {
-      success.classList.add('show');
-    }
+    const success = document.createElement('p');
+    success.className = 'waitlist-success show';
+    success.textContent = "You're on the list. We'll be in touch.";
+    form.parentNode.insertBefore(success, form.nextSibling);
   });
-}
+});
+
+/* ===== Pricing page: billing toggle ===== */
+document.querySelectorAll('.toggle-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.toggle-btn').forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+    const billing = btn.dataset.billing;
+
+    document.querySelectorAll('.price[data-monthly]').forEach((el) => {
+      el.textContent = el.dataset[billing];
+    });
+    document.querySelectorAll('.period[data-monthly]').forEach((el) => {
+      el.textContent = el.dataset[billing];
+    });
+  });
+});
 
 /* ===== Hero canvas animation — cinematic waveform / timeline ===== */
 (function () {

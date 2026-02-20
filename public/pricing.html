@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — CineBuild</title>
+  <meta name="description" content="CineBuild pricing plans. Free tier with unlimited manual culling, plus Personal, Professional, and Studio subscriptions.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">CineBuild</a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="/#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section pricing-hero">
+    <div class="container">
+      <h1 class="section-heading fade-in">Simple, honest pricing.</h1>
+      <p class="section-body fade-in">Manual culling is always free. Pay only when you want the full automated editorial experience.</p>
+
+      <!-- Billing toggle -->
+      <div class="billing-toggle fade-in">
+        <button class="toggle-btn active" data-billing="monthly">Monthly</button>
+        <button class="toggle-btn" data-billing="annual">Annual <span class="save-badge">Save 33%</span></button>
+      </div>
+
+      <!-- Pricing cards -->
+      <div class="pricing-grid fade-in">
+
+        <!-- Free -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h3>Free</h3>
+            <div class="pricing-amount">
+              <span class="price">$0</span>
+            </div>
+            <p class="pricing-desc">Get started with manual tools and a taste of auto-edit.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span> Unlimited manual video culling</li>
+            <li><span class="check">&#10003;</span> Unlimited manual photo culling</li>
+            <li><span class="check">&#10003;</span> LUT preview &amp; baking</li>
+            <li><span class="check">&#10003;</span> FCPXML export</li>
+            <li><span class="check">&#10003;</span> 3 auto-edit projects (lifetime)</li>
+            <li class="muted">20 clips per project</li>
+            <li class="muted">1 song per project</li>
+          </ul>
+          <a href="/#waitlist" class="btn btn-outline">Get Started</a>
+        </div>
+
+        <!-- Personal -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h3>Personal</h3>
+            <div class="pricing-amount">
+              <span class="price" data-monthly="$9.99" data-annual="$79.99">$9.99</span>
+              <span class="period" data-monthly="/month" data-annual="/year">/month</span>
+            </div>
+            <p class="pricing-desc">For hobbyists and family videographers.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span> Everything in Free</li>
+            <li><span class="check">&#10003;</span> 10 auto-edit projects/month</li>
+            <li><span class="check">&#10003;</span> 50 clips per project</li>
+            <li><span class="check">&#10003;</span> 2 songs per project</li>
+            <li><span class="check">&#10003;</span> Full quality export</li>
+            <li class="muted">Standard processing queue</li>
+          </ul>
+          <a href="/#waitlist" class="btn btn-primary">Join Waitlist</a>
+        </div>
+
+        <!-- Professional -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-card-header">
+            <h3>Professional</h3>
+            <div class="pricing-amount">
+              <span class="price" data-monthly="$24.99" data-annual="$199.99">$24.99</span>
+              <span class="period" data-monthly="/month" data-annual="/year">/month</span>
+            </div>
+            <p class="pricing-desc">For freelancers, corporate teams, and music video producers.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span> Everything in Personal</li>
+            <li><span class="check">&#10003;</span> 30 auto-edit projects/month</li>
+            <li><span class="check">&#10003;</span> 150 clips per project</li>
+            <li><span class="check">&#10003;</span> 5 songs per project</li>
+            <li><span class="check">&#10003;</span> Priority processing</li>
+            <li><span class="check">&#10003;</span> Advanced timeline controls</li>
+          </ul>
+          <a href="/#waitlist" class="btn btn-primary">Join Waitlist</a>
+        </div>
+
+        <!-- Studio -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h3>Studio</h3>
+            <div class="pricing-amount">
+              <span class="price" data-monthly="$49.99" data-annual="$399.99">$49.99</span>
+              <span class="period" data-monthly="/month" data-annual="/year">/month</span>
+            </div>
+            <p class="pricing-desc">For documentary teams, production studios, and agencies.</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">&#10003;</span> Everything in Professional</li>
+            <li><span class="check">&#10003;</span> 100 auto-edit projects/month</li>
+            <li><span class="check">&#10003;</span> 400 clips per project</li>
+            <li><span class="check">&#10003;</span> 10 songs per project</li>
+            <li><span class="check">&#10003;</span> Highest priority processing</li>
+            <li><span class="check">&#10003;</span> All export formats</li>
+          </ul>
+          <a href="/#waitlist" class="btn btn-primary">Join Waitlist</a>
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="compare-section fade-in">
+        <h2 class="section-heading">Compare plans</h2>
+        <div class="compare-table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Free</th>
+                <th>Personal</th>
+                <th class="highlight">Professional</th>
+                <th>Studio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manual culling</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+                <td class="highlight">Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Auto-edit projects</td>
+                <td>3 lifetime</td>
+                <td>10/month</td>
+                <td class="highlight">30/month</td>
+                <td>100/month</td>
+              </tr>
+              <tr>
+                <td>Clips per project</td>
+                <td>20</td>
+                <td>50</td>
+                <td class="highlight">150</td>
+                <td>400</td>
+              </tr>
+              <tr>
+                <td>Songs per project</td>
+                <td>1</td>
+                <td>2</td>
+                <td class="highlight">5</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Processing priority</td>
+                <td>&#8212;</td>
+                <td>Standard</td>
+                <td class="highlight">Priority</td>
+                <td>Highest</td>
+              </tr>
+              <tr>
+                <td>LUT support</td>
+                <td>&#10003;</td>
+                <td>&#10003;</td>
+                <td class="highlight">&#10003;</td>
+                <td>&#10003;</td>
+              </tr>
+              <tr>
+                <td>FCPXML export</td>
+                <td>&#10003;</td>
+                <td>&#10003;</td>
+                <td class="highlight">&#10003;</td>
+                <td>&#10003;</td>
+              </tr>
+              <tr>
+                <td>Advanced timeline controls</td>
+                <td>&#8212;</td>
+                <td>&#8212;</td>
+                <td class="highlight">&#10003;</td>
+                <td>&#10003;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq-section fade-in">
+        <h2 class="section-heading">Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>What's included in the free tier?</h4>
+            <p>Manual video and photo culling is completely free with no limits. You also get 3 auto-edit projects to try the full editorial experience.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Can I switch plans?</h4>
+            <p>Yes. Upgrade or downgrade anytime through the Mac App Store. Changes take effect at your next billing cycle.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Is there a free trial?</h4>
+            <p>Every paid plan includes a 7-day free trial. Cancel anytime during the trial and you won't be charged.</p>
+          </div>
+          <div class="faq-item">
+            <h4>What happens to my projects if I downgrade?</h4>
+            <p>All your existing projects and exports are yours to keep. You just won't be able to create new auto-edit projects beyond your new tier's limits.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Is this macOS only?</h4>
+            <p>Yes. CineBuild is a native macOS application built with SwiftUI and optimized for Apple Silicon. There are no plans for other platforms.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Does the annual plan save money?</h4>
+            <p>Yes — 33% off compared to monthly billing across all tiers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist CTA -->
+  <section class="section section-waitlist" id="waitlist-pricing">
+    <div class="container">
+      <div class="waitlist-content fade-in">
+        <h2 class="section-heading">Join the waitlist.</h2>
+        <p class="waitlist-subtext">CineBuild is in active development. Be the first to know when it launches.</p>
+        <form class="waitlist-form" id="waitlist-form">
+          <input type="email" placeholder="you@email.com" required aria-label="Email address" class="waitlist-input">
+          <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+        </form>
+        <p class="waitlist-note">macOS only. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; CineBuild 2026</span>
+      <div class="footer-links">
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+      <span class="footer-origin">Built in New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
