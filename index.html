@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineBuild — AI that edits like a filmmaker</title>
+  <meta name="description" content="CineBuild is an AI-powered video editing application for macOS that transforms raw footage into polished, professional edits in minutes.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">CineBuild</a>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#who-its-for">Who It's For</a>
+        <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">CineBuild</h1>
+      <p class="hero-tagline">AI that edits like a filmmaker.</p>
+      <p class="hero-oneliner">Drop in your footage and music. AI handles the edit. Export to Final Cut Pro.</p>
+      <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+      <div class="platform-badge">
+        <svg class="apple-logo" width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true">
+          <path d="M13.2 10.5c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.7-1.3-.1-2.5.8-3.1.8-.7 0-1.7-.7-2.8-.7-1.4 0-2.8.8-3.5 2.1-1.5 2.6-.4 6.5 1.1 8.6.7 1 1.6 2.2 2.7 2.1 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.8.7 1.2 0 1.9-1 2.6-2.1.8-1.2 1.2-2.3 1.2-2.4-.1-.1-2.6-1-2.6-3.5zM10.8 3.8c.6-.7 1-1.7.9-2.7-0.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 1.9-.5 2.5-1.2z"/>
+        </svg>
+        <span>macOS only</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The Problem -->
+  <section class="section section-problem" id="problem">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-heading">Editing takes forever. It doesn't have to.</h2>
+        <p class="section-body">The hardest part of video creation isn't shooting — it's the hours spent in the edit bay selecting clips, syncing to music, cutting around filler words, and mixing audio levels. CineBuild compresses that process from hours to minutes.</p>
+      </div>
+      <div class="stats-grid fade-in">
+        <div class="stat-card">
+          <span class="stat-number">2–4 hrs</span>
+          <span class="stat-label">The average 5-minute video takes 2–4 hours to edit</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">80%</span>
+          <span class="stat-label">of footage never makes the final cut</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Longer</span>
+          <span class="stat-label">Sound design alone can take longer than the picture edit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. How It Works -->
+  <section class="section section-how" id="how-it-works">
+    <div class="container">
+      <h2 class="section-heading fade-in">How It Works</h2>
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Import</h3>
+            <p>Drop your video clips and music into CineBuild. Assign A-Roll (talking heads, interviews) and B-Roll (cutaway footage) with a single keypress.</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Configure</h3>
+            <p>Choose a mood, pick a style preset, set your target duration. Or just hit go — the defaults are smart.</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>AI Edits</h3>
+            <p>Cloud AI analyzes every clip: transcribes dialogue, detects scenes, measures loudness, maps beats, identifies the story. Then it builds a complete timeline with cuts, transitions, music sync, and sound effects.</p>
+          </div>
+        </div>
+        <div class="step fade-in">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Preview &amp; Refine</h3>
+            <p>Watch the edit in the built-in timeline editor. Tweak anything. Then export to Final Cut Pro for finishing, or render directly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Features -->
+  <section class="section section-features" id="features">
+    <div class="container">
+      <h2 class="section-heading fade-in">Features</h2>
+
+      <!-- 4a. Intelligent Editing Engine -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Intelligent Editing Engine</h3>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4>Single-Pass AI Editorial</h4>
+            <p>One AI inference makes every decision a human editor would — clip selection, sequencing, pacing, trim points, transitions, audio placement, and narrative structure. No robotic patterns. The AI understands story tension, counterpoint, and when to hold a shot.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h4>Narrative Intelligence</h4>
+            <p>Detects story arcs across your footage. Identifies hooks, introductions, rising action, climax, and resolution. Maps setup/payoff relationships so the edit tells a coherent story, not just a highlight reel.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg>
+            </div>
+            <h4>Professional Cutting Patterns</h4>
+            <p>Organic, varied sequencing. B-Roll montages of 3–5 clips. Strategic long holds for emotional weight. Tension-release cycles with mandatory cooldowns. The edit feels human because the AI was trained on professional editing principles.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h4>5 Style Presets</h4>
+            <p>Music Video (fast cuts, beat-locked), Documentary (long holds, dialogue-driven), Family Memory (face-focused, warm), Action (frenetic, motion-heavy), Contemplative (slow, atmospheric). Or build your own configuration.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4b. Documentary Mode -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Documentary Mode</h3>
+        <div class="feature-split">
+          <div class="feature-split-text">
+            <div class="feature-item">
+              <h4>A-Roll / B-Roll Workflow</h4>
+              <p>Assign interview and cutaway footage. The AI transcribes all dialogue, detects filler words and repeated takes, then builds the edit around the strongest spoken content.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Word-Level Transcription</h4>
+              <p>Cloud AI transcribes speech with per-word timestamps and confidence scores. Detects 17 filler words (um, uh, like, you know, basically...) with contextual awareness — it knows when "like" is filler vs. legitimate.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Best Take Selection</h4>
+              <p>When you've recorded multiple takes of the same content, AI identifies duplicates and picks the best one. Or it suggests and lets you choose.</p>
+            </div>
+          </div>
+          <div class="feature-split-text">
+            <div class="feature-item">
+              <h4>Semantic B-Roll Matching</h4>
+              <p>AI understands what's being discussed and automatically places relevant B-Roll. Five matching priorities: activity match, semantic category, keyword, emotional resonance, thematic relevance.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Smart B-Roll Placement</h4>
+              <p>Four modes — concurrent (shows what's being discussed), anticipatory (shows before it's mentioned), reactive (shows after), or bridging (connects segments).</p>
+            </div>
+            <div class="feature-item">
+              <h4>Silence &amp; Filler Removal</h4>
+              <p>Three sensitivity levels. Removes dead air and verbal tics while preserving meaningful pauses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4c. Music & Beat Sync -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Music &amp; Beat Sync</h3>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h4>AI Music Analysis</h4>
+            <p>Upload your song and the AI maps the entire structure — BPM, beat grid, song sections (intro, verse, chorus, bridge, drop, outro), vocal sections, energy curves, and key moments.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <h4>Instrument-Aware Beat Cutting</h4>
+            <p>Not all beats are equal. Kick drums trigger major transitions. Snare hits drive mid-scene cuts. Cymbal crashes mark section changes. Hi-hat patterns pace rapid montages.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h4>Music-Story Alignment</h4>
+            <p>Verses map to ordinary-world footage. Choruses and drops sync to emotional peaks. Bridges match reflective moments. Outros wrap the conclusion.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Anticipatory Cuts &amp; Strategic Silence</h4>
+            <p>Cuts land slightly before the beat, matching how professional editors create the perception of sync. The AI knows when to pull the music out entirely — for dialogue emphasis, dramatic punctuation, or chapter transitions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4d. Professional Sound Design -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Professional Sound Design</h3>
+        <div class="feature-split">
+          <div class="feature-split-text">
+            <div class="feature-item">
+              <h4>Built-In SFX Library</h4>
+              <p>11 categories of production-ready sounds — whooshes, impacts, stingers, risers, downlifters, foley (footsteps, cloth, props, body), ambience (interior, exterior, special), and transitions. UCS naming convention compliant.</p>
+            </div>
+            <div class="feature-item">
+              <h4>AI-Selected Sound Effects</h4>
+              <p>The AI reviews your SFX library, understands what's happening in each scene, and places specific sounds at precise moments. Not random — intentional.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Frame-Accurate SFX Placement</h4>
+              <p>On-device DSP analysis finds the exact perceptual "hit point" in every sound file. The cloud uses a pre-roll formula so impacts land on the frame, risers peak at the moment, and ambient beds fade in naturally.</p>
+            </div>
+          </div>
+          <div class="feature-split-text">
+            <div class="feature-item">
+              <h4>Tension Sequencing</h4>
+              <p>Sub-bass drones 4–8 seconds before a hit, risers sweeping up over 6–16 seconds, a brief silence before impact, then the stinger. Cinematic sound design, automated.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Broadcast-Standard Mixing</h4>
+              <p>Dialogue at -12dB, music at -14dB solo / -28dB under dialogue, SFX layered at category-appropriate levels. ITU-R BS.1770-4 loudness measurement on every clip with 0.5-second temporal resolution.</p>
+            </div>
+            <div class="feature-item">
+              <h4>Volume Automation</h4>
+              <p>5 curve types (linear, S-curve, parabolic, step, logarithmic). Music ducks for speech automatically. Every clip's actual loudness profile informs the mix.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4e. Technical Power -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Technical Power</h3>
+        <div class="feature-cards feature-cards-3">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h4>Broadcast-Standard Loudness</h4>
+            <p>ITU-R BS.1770-4 loudness measurement with K-weighting. Integrated LUFS, true peak, loudness range, and temporal contours for source-level-aware mixing decisions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h4>LUT &amp; Camera Support</h4>
+            <p>Apply .cube LUTs for color grading during preview and export. Auto-mapping for Sony camera profiles (S-Log3, S-Gamut3.Cine). Parses XML sidecar files for metadata.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h4>Final Cut Pro Export</h4>
+            <p>Full FCPXML export with storylines, connected clips, and magnetic timeline features. The edit round-trips to FCP for professional finishing.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4>Native macOS</h4>
+            <p>Built with SwiftUI and AVFoundation. Metal GPU acceleration for preview. No FFmpeg, no Electron, no compromises. Designed for Apple Silicon.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+            </div>
+            <h4>Intelligent Caching</h4>
+            <p>Previously analyzed clips are cached. Re-edit the same project with different settings without re-uploading or re-analyzing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4f. Adaptive Learning -->
+      <div class="feature-group fade-in">
+        <h3 class="feature-group-title">Adaptive Learning</h3>
+        <div class="feature-cards feature-cards-3">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </div>
+            <h4>Per-Skill Feedback System</h4>
+            <p>Rate each AI skill's output (transcription, scene analysis, narrative structure, etc.) on a 0–100 scale with notes. The system triggers AI-powered refinement of its own processing instructions.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h4>User Rating Priority</h4>
+            <p>Star-rate your favorite clips before the edit. 4–5 star clips get a 3x selection score multiplier. 5-star clips receive special SFX treatment.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            </div>
+            <h4>15 Modular AI Skills</h4>
+            <p>The processing pipeline is built from 15 independent skills (transcription, B-Roll selection, narrative assembly, mood analysis, SFX suggestions, timeline generation, and more) organized in a dependency graph. Each can be refined independently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Who It's For -->
+  <section class="section section-audience" id="who-its-for">
+    <div class="container">
+      <h2 class="section-heading fade-in">Who It's For</h2>
+      <div class="audience-grid">
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Family Videographers</h3>
+          <p>You shoot hours of footage at birthdays, holidays, and milestones. CineBuild picks the best moments, cuts around the shaky bits, syncs to your chosen song, and delivers a video your family will actually watch. No editing skills required.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3>Documentary Filmmakers</h3>
+          <p>Spend your time on story, not assembly. CineBuild transcribes all your interviews, removes filler words and bad takes, semantically matches B-Roll to what's being discussed, and builds a rough cut that respects narrative structure. Export to Final Cut Pro and refine from there.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Corporate Video Teams</h3>
+          <p>Turn conference recordings, product demos, and internal comms into polished videos. AI handles the tedious work — trimming silences, cutting between speakers and slides, adding professional transitions and background music. Broadcast-standard audio levels included.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h3>Music Video Creators</h3>
+          <p>Beat-synced editing that actually understands music structure. Cuts land on kicks, transitions hit on cymbal crashes, and the visual energy follows the song's arc from verse to drop. Upload your track and let the AI cut your footage to the beat.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Wedding &amp; Event Videographers</h3>
+          <p>You shot 6 hours of footage. The client wants a 5-minute highlight reel by next week. CineBuild analyzes all your clips, identifies the key moments, and assembles an emotionally structured edit with music, sound design, and smooth pacing.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3>Content Creators &amp; YouTubers</h3>
+          <p>Get from shoot to publish faster. CineBuild handles the rough cut — removing dead air, selecting the best takes, adding B-Roll where you'd want it, and syncing transitions to your intro music. You handle the creative polish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Technical Specs -->
+  <section class="section section-specs" id="specs">
+    <div class="container">
+      <h2 class="section-heading fade-in">At a Glance</h2>
+      <div class="specs-table fade-in">
+        <div class="spec-row">
+          <span class="spec-label">Platform</span>
+          <span class="spec-value">macOS (Apple Silicon optimized)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">AI Engine</span>
+          <span class="spec-value">Google Gemini 2.5 Pro (cloud)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Audio Analysis</span>
+          <span class="spec-value">ITU-R BS.1770-4 compliant</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Export Formats</span>
+          <span class="spec-value">FCPXML (Final Cut Pro), direct video render</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Video Support</span>
+          <span class="spec-value">All formats supported by AVFoundation</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">LUT Support</span>
+          <span class="spec-value">.cube files (1D and 3D)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Camera Support</span>
+          <span class="spec-value">Sony XML metadata, auto LUT mapping</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Sound Design</span>
+          <span class="spec-value">11 SFX categories, UCS naming</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Music Analysis</span>
+          <span class="spec-value">BPM, beat grid, structure, energy curves</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Processing</span>
+          <span class="spec-value">Cloud AI + on-device Metal GPU</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Waitlist / CTA -->
+  <section class="section section-waitlist" id="waitlist">
+    <div class="container">
+      <div class="waitlist-content fade-in">
+        <h2 class="section-heading">Be first in line.</h2>
+        <p class="waitlist-subtext">CineBuild is in active development. Join the waitlist for early access.</p>
+        <form class="waitlist-form" id="waitlist-form">
+          <input type="email" placeholder="you@email.com" required aria-label="Email address" class="waitlist-input">
+          <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+        </form>
+        <p class="waitlist-note">macOS only. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; CineBuild 2026</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+      <span class="footer-origin">Built in New Zealand</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
