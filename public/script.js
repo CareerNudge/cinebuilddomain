@@ -105,7 +105,7 @@ document.querySelectorAll('.toggle-btn').forEach((btn) => {
       width / 2, height / 2, height * 0.15,
       width / 2, height / 2, height * 0.9
     );
-    grd.addColorStop(0, 'rgba(53, 113, 197, 0.06)');
+    grd.addColorStop(0, 'rgba(43, 125, 233, 0.06)');
     grd.addColorStop(1, 'rgba(10, 12, 16, 0)');
     ctx.fillStyle = grd;
     ctx.fillRect(0, 0, width, height);
@@ -113,7 +113,7 @@ document.querySelectorAll('.toggle-btn').forEach((btn) => {
     // Draw waveform lines
     lines.forEach((line) => {
       ctx.beginPath();
-      ctx.strokeStyle = `rgba(232, 120, 47, ${line.opacity})`;
+      ctx.strokeStyle = `rgba(242, 138, 46, ${line.opacity})`;
       ctx.lineWidth = 1.5;
 
       for (let x = 0; x <= width; x += 3) {
@@ -142,7 +142,7 @@ document.querySelectorAll('.toggle-btn').forEach((btn) => {
       const x = (i * (blockWidth + blockGap) + baseTime * 100) % (width + 200) - 100;
       const opacity = 0.04 + Math.sin(i * 1.2 + baseTime * 2) * 0.03;
 
-      ctx.fillStyle = `rgba(53, 113, 197, ${opacity})`;
+      ctx.fillStyle = `rgba(43, 125, 233, ${opacity})`;
       ctx.fillRect(x, blockY, blockWidth, blockHeight);
       ctx.fillRect(x, blockY + blockHeight + 2, blockWidth * 0.6, blockHeight * 0.6);
     }
