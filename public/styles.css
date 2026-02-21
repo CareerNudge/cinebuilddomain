@@ -246,9 +246,103 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--border);
   font-size: 0.85rem;
   color: var(--text-muted);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.platform-badge:hover {
+  border-color: var(--accent-start);
+  color: var(--text-secondary);
 }
 
 .apple-logo { opacity: 0.7; }
+
+.beta-note {
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ===== Download Page ===== */
+.download-hero {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.download-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.download-content .section-body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
+  margin: 0 auto 32px;
+}
+
+.download-notice {
+  text-align: left;
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 36px;
+}
+
+.download-notice h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--accent-end);
+}
+
+.download-notice p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.download-notice ul {
+  list-style: none;
+  padding: 0;
+}
+
+.download-notice li {
+  position: relative;
+  padding: 6px 0 6px 18px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.download-notice li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-end);
+}
+
+.download-btn {
+  font-size: 1.1rem;
+  padding: 16px 40px;
+}
+
+.download-meta {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
 
 /* ===== How It Works (compact) ===== */
 .section-how { background: var(--bg-secondary); }
@@ -776,6 +870,10 @@ img { max-width: 100%; display: block; }
 
   .section-waitlist { padding: 60px 0; }
   .pricing-hero { padding-top: 110px; }
+  .download-hero { padding-top: 110px; }
+  .download-notice { padding: 20px; }
+  .download-btn { font-size: 1rem; padding: 14px 32px; }
+  .download-icon { width: 72px; height: 72px; border-radius: 16px; margin-bottom: 24px; }
 
   .compare-section { margin-bottom: 60px; }
   .compare-table { font-size: 0.75rem; }

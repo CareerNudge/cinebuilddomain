@@ -25,6 +25,19 @@
             "value": "public, max-age=300"
           }
         ]
+      },
+      {
+        "source": "**/*.dmg",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/octet-stream"
+          },
+          {
+            "key": "Content-Disposition",
+            "value": "attachment; filename=\"CineBuild.dmg\""
+          }
+        ]
       }
     ]
   }
