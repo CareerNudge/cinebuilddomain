@@ -262,6 +262,14 @@ img { max-width: 100%; display: block; }
 
 .apple-logo { opacity: 0.7; }
 
+.hero-download {
+  gap: 10px;
+}
+
+.hero-download .apple-logo {
+  opacity: 1;
+}
+
 .beta-note {
   margin-top: 14px;
   font-size: 0.8rem;
