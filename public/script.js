@@ -100,14 +100,25 @@ document.querySelectorAll('.toggle-btn').forEach((btn) => {
   function draw(time) {
     ctx.clearRect(0, 0, width, height);
 
-    // Radial gradient vignette
+    // Radial gradient vignette — backlit ambience
     const grd = ctx.createRadialGradient(
-      width / 2, height / 2, height * 0.15,
-      width / 2, height / 2, height * 0.9
+      width / 2, height / 2, height * 0.1,
+      width / 2, height / 2, height * 0.85
     );
-    grd.addColorStop(0, 'rgba(43, 125, 233, 0.06)');
+    grd.addColorStop(0, 'rgba(43, 125, 233, 0.09)');
+    grd.addColorStop(0.4, 'rgba(120, 130, 200, 0.04)');
     grd.addColorStop(1, 'rgba(10, 12, 16, 0)');
     ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, width, height);
+
+    // Secondary warm backlight source (off-center)
+    const grd2 = ctx.createRadialGradient(
+      width * 0.65, height * 0.4, 0,
+      width * 0.65, height * 0.4, height * 0.5
+    );
+    grd2.addColorStop(0, 'rgba(242, 138, 46, 0.04)');
+    grd2.addColorStop(1, 'rgba(10, 12, 16, 0)');
+    ctx.fillStyle = grd2;
     ctx.fillRect(0, 0, width, height);
 
     // Draw waveform lines
