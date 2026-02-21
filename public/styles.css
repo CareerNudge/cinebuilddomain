@@ -334,10 +334,15 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
   width: 36px;
   height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
   padding: 7px;
   border-radius: 8px;
   background: linear-gradient(135deg, rgba(43, 125, 233, 0.15), rgba(242, 138, 46, 0.15));
   color: var(--accent-end);
+  overflow: hidden;
 }
 
 .feature-group h3 {
@@ -792,7 +797,7 @@ img { max-width: 100%; display: block; }
   .step-num { width: 28px; height: 28px; font-size: 0.85rem; }
 
   .feature-group { padding: 20px 16px; }
-  .feature-icon { width: 30px; height: 30px; padding: 6px; }
+  .feature-icon { width: 30px; height: 30px; min-width: 30px; min-height: 30px; max-width: 30px; max-height: 30px; padding: 6px; }
   .feature-group-header { gap: 10px; }
 
   .btn { padding: 12px 24px; font-size: 0.9rem; }
