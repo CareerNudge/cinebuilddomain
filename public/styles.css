@@ -323,10 +323,26 @@ img { max-width: 100%; display: block; }
 
 .feature-group:hover { border-color: var(--accent-start); }
 
+.feature-group-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(43, 125, 233, 0.15), rgba(242, 138, 46, 0.15));
+  color: var(--accent-end);
+}
+
 .feature-group h3 {
   font-size: 1.2rem;
   font-weight: 800;
-  margin-bottom: 12px;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
