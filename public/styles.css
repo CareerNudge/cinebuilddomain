@@ -6,17 +6,17 @@
 }
 
 :root {
-  --bg-primary: #0a0a0c;
-  --bg-secondary: #111116;
-  --bg-card: #16161c;
-  --bg-card-hover: #1c1c24;
-  --text-primary: #f0f0f5;
-  --text-secondary: #a0a0b0;
-  --text-muted: #6a6a7a;
-  --accent-start: #6366f1;
-  --accent-end: #a855f7;
+  --bg-primary: #0a0c10;
+  --bg-secondary: #0f1218;
+  --bg-card: #141820;
+  --bg-card-hover: #1a2028;
+  --text-primary: #eef0f5;
+  --text-secondary: #9aa4b8;
+  --text-muted: #5a6578;
+  --accent-start: #3571C5;
+  --accent-end: #E8782F;
   --gradient: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-  --border: #222230;
+  --border: #1e2838;
   --radius: 12px;
   --radius-sm: 8px;
   --max-width: 1200px;
@@ -85,7 +85,7 @@ img { max-width: 100%; display: block; }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 30px rgba(53, 113, 197, 0.35);
 }
 
 .btn-outline {
@@ -123,7 +123,7 @@ img { max-width: 100%; display: block; }
 }
 
 .nav.scrolled {
-  background: rgba(10, 10, 12, 0.85);
+  background: rgba(10, 12, 16, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -139,12 +139,23 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.25rem;
   font-weight: 800;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.nav-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  /* Reset fill so the image shows */
+  -webkit-text-fill-color: initial;
 }
 
 .nav-links {
@@ -473,7 +484,7 @@ img { max-width: 100%; display: block; }
 .save-badge {
   font-size: 0.75rem;
   font-weight: 700;
-  background: rgba(168, 85, 247, 0.2);
+  background: rgba(232, 120, 47, 0.2);
   color: var(--accent-end);
   padding: 2px 8px;
   border-radius: 50px;
@@ -512,7 +523,7 @@ img { max-width: 100%; display: block; }
 
 .pricing-card-featured {
   border-color: var(--accent-start);
-  box-shadow: 0 0 40px rgba(99, 102, 241, 0.12);
+  box-shadow: 0 0 40px rgba(53, 113, 197, 0.12);
 }
 
 .pricing-badge {
@@ -628,7 +639,7 @@ img { max-width: 100%; display: block; }
 }
 
 .compare-table .highlight {
-  background: rgba(99, 102, 241, 0.06);
+  background: rgba(53, 113, 197, 0.06);
 }
 
 /* FAQ */
