@@ -404,6 +404,22 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
+/* ===== Moon image ===== */
+.moon-image-wrap {
+  display: flex;
+  justify-content: center;
+  background: var(--bg-primary);
+  overflow: hidden;
+}
+
+.moon-image {
+  width: 100%;
+  max-width: var(--max-width);
+  height: auto;
+  display: block;
+  mix-blend-mode: screen;
+}
+
 /* ===== Backlit section ambience ===== */
 .section-how,
 .section-features,
