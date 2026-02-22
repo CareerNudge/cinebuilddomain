@@ -418,6 +418,9 @@ img { max-width: 100%; display: block; }
   height: auto;
   display: block;
   mix-blend-mode: screen;
+  filter: contrast(1.4) brightness(1.15);
+  -webkit-mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, white 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 90% 85% at 50% 50%, white 40%, transparent 100%);
 }
 
 /* ===== Backlit section ambience ===== */
